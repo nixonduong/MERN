@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var assert = require('assert');
 var mongo = require('mongodb').MongoClient;
 var app = express();
-var url = "mongodb://<user>:<password>@ds115340.mlab.com:15340/userlist";
+var url = "mongodb://username:password@ds115340.mlab.com:15340/userlist";
 var port = 5000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/submit', (req, res) => {
@@ -15,7 +15,7 @@ app.post('/submit', (req, res) => {
 	}
 	mongo.connect(url, (err, db) => {
 		assert.equal(null, err);
-		db.collection('user-data').insertOne(item, function(err, result) {
+		db.collection('item-data').insertOne(item, function(err, result) {
         assert.equal(null, err);
         db.close();
       });
