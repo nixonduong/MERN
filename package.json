@@ -1,0 +1,25 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nixonduong/MERN.git"
+  },
+  "author": "Nixon Duong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nixonduong/MERN/issues"
+  },
+  "homepage": "https://github.com/nixonduong/MERN#readme",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^2.2.33"
+  }
+}
